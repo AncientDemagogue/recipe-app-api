@@ -126,5 +126,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+#127.0.0.1./static or /media gets mapped
+
+MEDIA_ROOT = '/vol/web/media'
+# tells django wher to store all media files
+STATIC_ROOT = '/vol/web/static'
+# where all the static files will be stored
 
 AUTH_USER_MODEL = 'core.User'
